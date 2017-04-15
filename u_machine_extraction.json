@@ -97,6 +97,7 @@
 					{id:commandblock_minecart,Command:scoreboard objectives add vars dummy},
 					{id:commandblock_minecart,Command:scoreboard objectives setdisplay sidebar vars},
 					{id:commandblock_minecart,Command:execute @p ~ ~ ~ playsound entity.chicken.egg master @a ~ ~ ~},
+					{id:commandblock_minecart,Command:setblock ~2 ~-1 ~2 minecraft:wall_sign 4 replace {Text1:"{\\\"text\\\":\\\" \\\"}",Text2:"{\\\"text\\\":\\\"Destroy\\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":true}",Text3:"{\\\"text\\\":\\\"machine\\\",\\\"color\\\":\\\"red\\\",\\\"bold\\\":true,\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"fill ~ ~ ~ ~12 ~9 ~-3 minecraft:air 0\\\"}}",Text4:"{\\\"text\\\":\\\" \\\"}"}},
 					{id:commandblock_minecart,Command:setblock ~ ~ ~1 command_block 0 replace {Command:fill ~ ~-3 ~-1 ~ ~ ~ air}},
 					{id:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},
 					{id:commandblock_minecart,Command:kill @e[type=commandblock_minecart,r=1]}]}]}]}
