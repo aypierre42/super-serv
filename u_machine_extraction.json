@@ -133,7 +133,7 @@
 					{id:commandblock_minecart,Command:blockdata ~5 ~6 ~1 {auto:1,Command:execute @e[tag=play] ~ ~ ~ entitydata @e[name=printer,r=5] {Tags:["canPrint","used"]}}},
 					{id:commandblock_minecart,Command:blockdata ~6 ~6 ~1 {auto:1,Command:execute @e[name=item.item.paper] ~ ~ ~ entitydata @e[name=printer,tag=canPrint] {Tags:["printing","used"]}}},
 					{id:commandblock_minecart,Command:blockdata ~7 ~6 ~1 {auto:1,Command:execute @e[tag=printing] ~ ~ ~ kill @e[name=item.item.paper,r=1]}},
-					{id:commandblock_minecart,Command:blockdata ~8 ~6 ~1 {auto:1,Command:execute @e[tag=printing] ~ ~ ~ summon minecraft:item ~ ~0.5 ~ {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:1460s},Motion:[0.0,2.0,0.0]}}},
+					{id:commandblock_minecart,Command:blockdata ~8 ~6 ~1 {auto:1,Command:execute @e[tag=printing] ~ ~ ~ summon minecraft:item ~ ~0.5 ~ {Item:{id:"minecraft:diamond_hoe",Count:1b,Damage:1460s},Motion:[0.0,0.5,0.0]}}},
 					{id:commandblock_minecart,Command:blockdata ~9 ~6 ~1 {auto:1,Command:entitydata @e[tag=printing] {Tags:["used"]}}},
 					{id:commandblock_minecart,Command:setblock ~4 ~7 ~1 repeating_command_block 5 replace {auto:1,Command:execute @e[name=item.tile.commandBlock] ~ ~ ~ testfor @e[name=item.tile.notGate,r=1] {}}},
 					{id:commandblock_minecart,Command:setblock ~5 ~7 ~1 chain_command_block 13 replace {auto:1,Command:execute @e[name=item.tile.commandBlock] ~ ~ ~ testfor @e[name=item.item.skull.char,r=1] {Item:{id:"minecraft:skull",Count:1b,Damage:3s,tag:{SkullOwner:{Id:"9635434b-6ea8-47cf-809c-bbd3efa84f67"}}}}}},
