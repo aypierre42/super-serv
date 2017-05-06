@@ -16,6 +16,8 @@
 				{id:commandblock_minecart,Command:fill ~4 ~ ~ ~18 ~9 ~ chain_command_block 12},
 				{id:commandblock_minecart,Command:fill ~19 ~ ~ ~19 ~9 ~ chain_command_block 4},
 				{id:commandblock_minecart,Command:fill ~19 ~ ~1 ~19 ~9 ~1 chain_command_block 2},
+				{id:commandblock_minecart,Command:fill ~5 ~5 ~1 ~18 ~9 ~1 chain_command_block 5},
+				{id:commandblock_minecart,Command:fill ~4 ~5 ~ ~18 ~9 ~ chain_command_block 4},
 				{id:commandblock_minecart,Command:execute @p ~ ~ ~ playsound entity.chicken.egg master @a ~ ~ ~},				
 				
 				
