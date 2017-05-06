@@ -3,23 +3,20 @@
 		{id:falling_block,Block:redstone_block,Time:1,Passengers:[
 			{id:falling_block,Block:activator_rail,Time:1,Passengers:[
 				{id:commandblock_minecart,Command:gamerule commandBlockOutput false},
-				{id:commandblock_minecart,Command:fill ~3 ~-1 ~-1 ~20 ~8 ~2 stained_glass 15 hollow},
+				{id:commandblock_minecart,Command:fill ~3 ~-1 ~-1 ~20 ~10 ~2 stained_glass 15 hollow},
 				{id:commandblock_minecart,Command:fill ~3 ~-1 ~-1 ~20 ~-1 ~2 quartz_block},
-				{id:commandblock_minecart,Command:fill ~3 ~8 ~-1 ~20 ~8 ~2 quartz_block},
-				{id:commandblock_minecart,Command:fill ~3 ~-1 ~2 ~3 ~8 ~2 quartz_block},
-				{id:commandblock_minecart,Command:fill ~3 ~-1 ~-1 ~3 ~8 ~-1 quartz_block},
+				{id:commandblock_minecart,Command:fill ~3 ~10 ~-1 ~20 ~10 ~2 quartz_block},
+				{id:commandblock_minecart,Command:fill ~3 ~-1 ~2 ~3 ~10 ~2 quartz_block},
+				{id:commandblock_minecart,Command:fill ~3 ~-1 ~-1 ~3 ~10 ~-1 quartz_block},
 				{id:commandblock_minecart,Command:fill ~3 ~5 ~-1 ~20 ~5 ~2 quartz_block },
-				{id:commandblock_minecart,Command:fill ~20 ~8 ~2 ~20 ~-1 ~2 quartz_block},
-				{id:commandblock_minecart,Command:fill ~20 ~8 ~-1 ~20 ~-1 ~-1 quartz_block},
-				{id:commandblock_minecart,Command:fill ~4 ~ ~1 ~4 ~7 ~1 repeating_command_block 5},
-				{id:commandblock_minecart,Command:fill ~5 ~ ~1 ~18 ~7 ~1 chain_command_block 13},
-				{id:commandblock_minecart,Command:fill ~4 ~ ~ ~18 ~7 ~ chain_command_block 12},
-				{id:commandblock_minecart,Command:fill ~19 ~ ~ ~19 ~7 ~ chain_command_block 4},
-				{id:commandblock_minecart,Command:fill ~19 ~ ~1 ~19 ~7 ~1 chain_command_block 2},
-				{id:commandblock_minecart,Command:execute @p ~ ~ ~ playsound entity.chicken.egg master @a ~ ~ ~},
-				{id:commandblock_minecart,Command:tellraw @a[r=20] ["",{"text":"''ONE CB''","color":"blue","bold":true,"italic":true}]},{id:commandblock_minecart,Command:tellraw @a[r=20] ["",{"text":"One-command créé par ","color":"green","bold":true},{"text":"Sotshi et Aypierre","color":"dark_red","bold":true}]},{id:commandblock_minecart,Command:tellraw @a[r=20] ["",{"text":"Les chaînes de ","color":"white","italic":true},{"text":"sotshi","color":"blue","italic":true,"underlined":true,"clickEvent":{"action":"open_url","value":"https://www.youtube.com/channel/UCIcUrmQxb48Ctyyq7Ck3iNQ"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Clique pour ouvrir le lien !","color":"gray"}]}}},{"text":" et " ,"color":"white","italic":true},{"text":"Aypierre","color":"blue","italic":true,"underlined":true,"clickEvent":{"action":"open_url","value":"https://www.youtube.com/user/aypierre"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Clique pour ouvrir le lien !","color":"gray"}]}}}]},
-				{id:commandblock_minecart,Command:setblock ~2 ~-1 ~2 minecraft:wall_sign 4 replace {Text1:"{\\\"text\\\":\\\" \\\"}",Text2:"{\\\"text\\\":\\\"Détruire\\\",\\\"color\\\":\\\"dark_red\\\",\\\"bold\\\":true}",Text3:"{\\\"text\\\":\\\"la machine\\\",\\\"color\\\":\\\"dark_red\\\",\\\"bold\\\":true,\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"fill ~ ~ ~ ~18 ~9 ~-3 minecraft:air 0\\\"}}",Text4:"{\\\"text\\\":\\\" \\\"}"}},
-				{id:commandblock_minecart,Command:setblock ~2 ~5 ~ minecraft:wall_sign 4 replace {Text1:"{\\\"text\\\":\\\"ONE CB\\\",\\\"color\\\":\\\"dark_red\\\",\\\"bold\\\":true}",Text2:"{\\\"text\\\":\\\"by\\\",\\\"color\\\":\\\"white\\\",\\\"italic\\\":true}",Text3:"{\\\"text\\\":\\\"Sotshi & Aypierre\\\",\\\"color\\\":\\\"blue\\\",\\\"bold\\\":false,\\\"clickEvent\\\":{\\\"action\\\":\\\"run_command\\\",\\\"value\\\":\\\"playsound minecraft:winxpstart ambient @a ~ ~ ~\\\"}}",Text4:"{\\\"text\\\":\\\" \\\"}"}},					
+				{id:commandblock_minecart,Command:fill ~20 ~10 ~2 ~20 ~-1 ~2 quartz_block},
+				{id:commandblock_minecart,Command:fill ~20 ~10 ~-1 ~20 ~-1 ~-1 quartz_block},
+				{id:commandblock_minecart,Command:fill ~4 ~ ~1 ~4 ~9 ~1 repeating_command_block 5},
+				{id:commandblock_minecart,Command:fill ~5 ~ ~1 ~18 ~9 ~1 chain_command_block 13},
+				{id:commandblock_minecart,Command:fill ~4 ~ ~ ~18 ~9 ~ chain_command_block 12},
+				{id:commandblock_minecart,Command:fill ~19 ~ ~ ~19 ~9 ~ chain_command_block 4},
+				{id:commandblock_minecart,Command:fill ~19 ~ ~1 ~19 ~9 ~1 chain_command_block 2},
+				{id:commandblock_minecart,Command:execute @p ~ ~ ~ playsound entity.chicken.egg master @a ~ ~ ~},				
 				
 				
 				{id:commandblock_minecart,Command:blockdata ~4 ~ ~1 {auto:1,Command:execute @e[name=item.tile.fenceIron] ~ ~ ~ testfor @e[name=item.item.charcoal,r=1] {}}},
@@ -32,7 +29,28 @@
 				{id:commandblock_minecart,Command:blockdata ~10 ~ ~1 {auto:1,Command:execute @e[name=item.item.cauldron] ~ ~ ~ particle happyVillager ~ ~ ~ 0 0.5 0 100 100 force}},
 				{id:commandblock_minecart,Command:blockdata ~11 ~ ~1 {auto:1,Command:execute @e[name=item.item.cauldron] ~ ~ ~ summon minecraft:item ~ ~ ~ {CustomName:"Glaçière",CustomNameVisible:1b,Tags:["new_item"],Motion:[0.0,0.3,0.0],Item:{id:"minecraft:spawn_egg",Count:1b,tag:{ench:[0:{lvl:1,id:0}],display:{Lore:[0:"Un petit rafraichissement ?"],Name:"Glaçière"},EntityTag:{CustomName:"glaciere_spawn",id:"minecraft:bat",Silent:1b,ActiveEffects:[0:{ShowParticles:0b,Duration:9999,Id:14}]}},Damage:0s}}}},
 				{id:commandblock_minecart,Command:blockdata ~12 ~ ~1 {auto:1,Command:execute @e[name=item.item.cauldron] ~ ~ ~ kill @e[type=item,tag=!new_item,r=1]}},				
-						
+				
+				{id:commandblock_minecart,Command:setblock ~13 ~ ~1 chain_command_block 5 replace {auto:1,Command:execute @e[name=item.item.stick] ~ ~ ~ testfor @e[name=item.tile.banner,r=1] {Item:{id:"minecraft:banner",Count:10b,Damage:15s}}}},
+				{id:commandblock_minecart,Command:setblock ~14 ~ ~1 chain_command_block 13 replace {auto:1,Command:execute @e[name=item.item.stick] ~ ~ ~ testfor @e[name=item.item.stick,r=1] {Item:{id:"minecraft:stick",Count:5b,Damage:0s}}}},
+				{id:commandblock_minecart,Command:setblock ~15 ~ ~1 chain_command_block 13 replace {auto:1,Command:execute @e[name=item.item.stick] ~ ~ ~ particle happyVillager ~ ~ ~ 0 0.5 0 100 100 force}},
+				{id:commandblock_minecart,Command:setblock ~16 ~ ~1 chain_command_block 13 replace {auto:1,Command:execute @e[name=item.item.stick] ~ ~ ~ summon minecraft:item ~ ~ ~ {CustomName:"Parasol",CustomNameVisible:1b,Tags:["new_item"],Motion:[0.0,0.3,0.0],Item:{id:"minecraft:spawn_egg",Count:1b,tag:{ench:[0:{lvl:1,id:0}],display:{Lore:[0:"Un parasol..."],Name:"Parasol"},EntityTag:{CustomName:"parasol_spawn",id:"minecraft:bat",Silent:1b,ActiveEffects:[0:{ShowParticles:0b,Duration:9999,Id:14}]}},Damage:0s}}}},
+				{id:commandblock_minecart,Command:setblock ~17 ~ ~1 chain_command_block 13 replace {auto:1,Command:execute @e[name=item.item.stick] ~ ~ ~ playsound minecraft:entity.chicken.egg ambient @a ~ ~ ~}},
+				{id:commandblock_minecart,Command:setblock ~18 ~ ~1 chain_command_block 13 replace {auto:1,Command:execute @e[name=item.item.stick] ~ ~ ~ kill @e[type=item,tag=!new_item,r=1]}},
+				
+				{id:commandblock_minecart,Command:setblock ~19 ~ ~ repeating_command_block 4 replace {auto:1,Command:execute @e[name=item.tile.woolCarpet.white] ~ ~ ~ testfor @e[name=item.tile.woolCarpet.red,r=1] {Item:{id:"minecraft:carpet",Count:5b,Damage:14s}}}},
+				{id:commandblock_minecart,Command:setblock ~18 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.woolCarpet.white] ~ ~ ~ testfor @e[name=item.tile.woolCarpet.white,r=1] {Item:{id:"minecraft:carpet",Count:5b,Damage:0s}}}},
+				{id:commandblock_minecart,Command:setblock ~17 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.woolCarpet.white] ~ ~ ~ particle happyVillager ~ ~ ~ 0 0.5 0 100 100 force}},
+				{id:commandblock_minecart,Command:setblock ~16 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.woolCarpet.white] ~ ~ ~ summon minecraft:item ~ ~ ~ {CustomName:"Nappe Picnic",CustomNameVisible:1b,Tags:["new_item"],Motion:[0.0,0.3,0.0],Item:{id:"minecraft:spawn_egg",Count:1b,tag:{ench:[0:{lvl:1,id:0}],display:{Lore:[0:"Classic"],Name:"Nappe picnic"},EntityTag:{CustomName:"nappe_spawn",id:"minecraft:bat",Silent:1b,ActiveEffects:[0:{ShowParticles:0b,Duration:9999,Id:14}]}},Damage:0s}}}},
+				{id:commandblock_minecart,Command:setblock ~15 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.woolCarpet.white] ~ ~ ~ playsound minecraft:entity.chicken.egg ambient @a ~ ~ ~}},
+				{id:commandblock_minecart,Command:setblock ~14 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.woolCarpet.white] ~ ~ ~ kill @e[type=item,tag=!new_item,r=1]}},
+				
+				{id:commandblock_minecart,Command:setblock ~13 ~ ~ chain_command_block 4 replace {auto:1,Command:execute @e[name=item.tile.wood.oak] ~ ~ ~ testfor @e[name=item.item.stick,r=1] {Item:{id:"minecraft:stick",Count:5b}}}},
+				{id:commandblock_minecart,Command:setblock ~12 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.wood.oak] ~ ~ ~ testfor @e[name=item.tile.wood.oak,r=1] {Item:{id:"minecraft:planks",Count:5b}}}},
+				{id:commandblock_minecart,Command:setblock ~11 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.wood.oak] ~ ~ ~ particle happyVillager ~ ~ ~ 0 0.5 0 100 100 force}},
+				{id:commandblock_minecart,Command:setblock ~10 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.wood.oak] ~ ~ ~ summon minecraft:item ~ ~ ~ {CustomName:"Table picnic",CustomNameVisible:1b,Tags:["new_item"],Motion:[0.0,0.3,0.0],Item:{id:"minecraft:spawn_egg",Count:1b,tag:{ench:[0:{lvl:1,id:0}],display:{Lore:[0:"La table de picnic de l'aire d'autoroute",1:"de la ferté bernard"],Name:"Table picnic"},EntityTag:{CustomName:"tablePicnic_spawn",id:"minecraft:bat",Silent:1b,ActiveEffects:[0:{ShowParticles:0b,Duration:9999,Id:14}]}},Damage:0s}}}},
+				{id:commandblock_minecart,Command:setblock ~9 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.wood.oak] ~ ~ ~ playsound minecraft:entity.chicken.egg ambient @a ~ ~ ~}},
+				{id:commandblock_minecart,Command:setblock ~8 ~ ~ chain_command_block 12 replace {auto:1,Command:execute @e[name=item.tile.wood.oak] ~ ~ ~ kill @e[type=item,tag=!new_item,r=1]}},
+				
 				
 				
 				{id:commandblock_minecart,Command:setblock ~4 ~1 ~1 repeating_command_block 5 replace {auto:1,Command:execute @e[name=barbecue_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.0 ~-1.375 ~-0.938 {CustomName:"brick_block"}}},
@@ -127,12 +145,11 @@
 				{id:commandblock_minecart,Command:blockdata ~19 ~4 ~1 {auto:1,Command:execute @e[name=boisson_2,score_GLA2_min=1] ~ ~ ~ playsound block.furnace.fire_crackle block @a ~ ~ ~ 1 1}},
 				{id:commandblock_minecart,Command:blockdata ~19 ~4 ~ {auto:1,Command:entitydata @e[name=boisson_2,score_GLA2_min=1,score_GLA2=1] {HandItems:[{id:"minecraft:potion",Count:1,tag:{display:{Lore:[0:"Kako Kalo !"],Name:"Kako"},CustomPotionEffects:[1:{Id:24,Amplifier:0,Duration:100,ShowParticles:0b}],CustomPotionColor:0}},{}],DisabledSlots:1973790}}},
 				{id:commandblock_minecart,Command:setblock ~18 ~4 ~ chain_command_block 4 replace {auto:1,Command:scoreboard players reset @e[name=boisson_2,score_GLA2_min=1,score_GLA2=1] GLA2}},
-								
-											
 				
-							
-				{id:commandblock_minecart,Command:setblock ~ ~ ~1 command_block 0 replace {Command:fill ~-1 ~-3 ~-1 ~ ~ ~ air}},
-				{id:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},					
+				
+				{id:commandblock_minecart,Command:setblock ~ ~ ~1 command_block 1 replace {auto:1,Command:fill ~-1 ~-3 ~-1 ~ ~ ~ command_block}},
+				{id:commandblock_minecart,Command:setblock ~ ~1 ~1 chain_command_block 1 replace {auto:1,Command:fill ~-1 ~-3 ~-1 ~ ~ ~ air}},
+				{id:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},
 				{id:commandblock_minecart,Command:kill @e[type=commandblock_minecart,r=1]}
 			]}
 		]}
