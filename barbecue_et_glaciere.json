@@ -149,7 +149,11 @@
 				{id:commandblock_minecart,Command:setblock ~18 ~4 ~ chain_command_block 4 replace {auto:1,Command:scoreboard players reset @e[name=boisson_2,score_GLA2_min=1,score_GLA2=1] GLA2}},
 				
 				
+<<<<<<< HEAD
 				{id:commandblock_minecart,Command:say "Maintenant, copie-colle la deuxième commande dans le command block." },
+=======
+				{id:commandblock_minecart,Command:say Maintenant copie-colle la deuxième commande dans le command block.},
+>>>>>>> origin/master
 				{id:commandblock_minecart,Command:setblock ~ ~ ~1 command_block 0 replace {Command:fill ~ ~-2 ~-1 ~ ~ ~ air}},
 				{id:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},
 				{id:commandblock_minecart,Command:setblock ~ ~-3 ~ command_block},
