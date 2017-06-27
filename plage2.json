@@ -1,0 +1,63 @@
+/summon falling_block ~ ~1 ~ 
+	{Block:obsidian,Time:1,Passengers:[
+		{id:falling_block,Block:redstone_block,Time:1,Passengers:[
+			{id:falling_block,Block:activator_rail,Time:1,Passengers:[
+			
+				{id:commandblock_minecart,Command:blockdata ~4 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.0 ~-1.380 ~0.0 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~5 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.0 ~-1.380 ~0.625 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~6 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.0 ~-1.380 ~1.25 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~7 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.0 ~-1.380 ~1.875 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~8 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.0 ~-1.380 ~2.5 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~9 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.0 ~-1.380 ~3.125 {CustomName:"serviette"}}},
+				
+				{id:commandblock_minecart,Command:blockdata ~10 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.625 ~-1.380 ~0.0 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~11 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.625 ~-1.380 ~0.625 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~12 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.625 ~-1.380 ~1.25 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~13 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.625 ~-1.380 ~1.875 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~14 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.625 ~-1.380 ~2.5 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~15 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~0.625 ~-1.380 ~3.125 {CustomName:"serviette"}}},
+				
+				{id:commandblock_minecart,Command:blockdata ~16 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.25 ~-1.380 ~0.0 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~17 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.25 ~-1.380 ~0.625 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~18 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.25 ~-1.380 ~1.25 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~19 ~6 ~1 {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.25 ~-1.380 ~1.875 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~19 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.25 ~-1.380 ~2.5 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~18 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.25 ~-1.380 ~3.125 {CustomName:"serviette"}}},
+				
+				{id:commandblock_minecart,Command:blockdata ~17 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.875 ~-1.380 ~0.0 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~16 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.875 ~-1.380 ~0.625 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~15 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.875 ~-1.380 ~1.25 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~14 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.875 ~-1.380 ~1.875 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~13 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.875 ~-1.380 ~2.5 {CustomName:"serviette"}}},
+				{id:commandblock_minecart,Command:blockdata ~12 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~1.875 ~-1.380 ~3.125 {CustomName:"serviette"}}},
+				
+				{id:commandblock_minecart,Command:blockdata ~5 ~6 ~ {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ entitydata @e[name=serviette] {DisabledSlots:2039583,Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:0b,ArmorItems:[{},{},{},{id:"carpet",Count:1b,Damage:0s}]}}},
+				{id:commandblock_minecart,Command:setblock ~4 ~6 ~ chain_command_block 1 replace {auto:1,Command:execute @e[name=serviette_spawn] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"serviette_main",Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b}}},
+				{id:commandblock_minecart,Command:blockdata ~4 ~7 ~ {auto:1,Command:kill @e[name=serviette_spawn]}},
+				{id:commandblock_minecart,Command:blockdata ~4 ~7 ~1 {auto:1,Command:execute @e[name=serviette_main] ~ ~ ~ detect ~ ~-1 ~ minecraft:air 0 kill @e[name=serviette,x=~,y=~-2,z=~,dx=3,dy=0,dz=3]}},
+				{id:commandblock_minecart,Command:blockdata ~5 ~7 ~1 {auto:1,Command:execute @e[name=serviette_main] ~ ~ ~ detect ~ ~-1 ~ minecraft:air 0 summon minecraft:item ~ ~ ~ {CustomName:"Serviette",CustomNameVisible:1b,Tags:["new_item"],Motion:[0.0,0.3,0.0],Item:{id:"minecraft:spawn_egg",Count:1b,tag:{ench:[0:{lvl:1,id:0}],display:{Lore:[0:"Classic"],Name:"Serviette"},EntityTag:{CustomName:"serviette_spawn",id:"minecraft:bat",Silent:1b,ActiveEffects:[0:{ShowParticles:0b,Duration:9999,Id:14}]}},Damage:0s}}}},
+				{id:commandblock_minecart,Command:blockdata ~6 ~7 ~1 {auto:1,Command:execute @e[name=serviette_main] ~ ~ ~ detect ~ ~-1 ~ minecraft:air 0 kill @e[name=serviette_main,r=1,c=1]}},
+				
+				
+				
+				{id:commandblock_minecart,Command:blockdata ~7 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ setblock ~ ~ ~ minecraft:fence}},
+				{id:commandblock_minecart,Command:blockdata ~8 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ setblock ~ ~1 ~ minecraft:fence}},
+				{id:commandblock_minecart,Command:blockdata ~9 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ setblock ~ ~2 ~ minecraft:fence}},
+				{id:commandblock_minecart,Command:blockdata ~10 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ setblock ~1 ~ ~ minecraft:lever facing=up_z}},
+				
+				{id:commandblock_minecart,Command:blockdata ~11 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ summon minecraft:armor_stand ~ ~1.3 ~ {CustomName:"douchepl",ArmorItems:[{},{},{},{id:"iron_block",Count:1b}]}}},
+				{id:commandblock_minecart,Command:blockdata ~12 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ summon minecraft:armor_stand ~ ~1.3 ~0.625 {CustomName:"douchepl",ArmorItems:[{},{},{},{id:"iron_block",Count:1b}]}}},
+				{id:commandblock_minecart,Command:blockdata ~13 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ summon minecraft:armor_stand ~ ~1.3 ~0.625 {CustomName:"douchepl",Tags:["particles"],Pose:{Head:[180f,0f,0f]},ArmorItems:[{},{},{},{id:"hopper",Count:1b}]}}},
+				{id:commandblock_minecart,Command:blockdata ~14 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ entitydata @e[name=douchepl] {DisabledSlots:2039583,Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:0b}}},
+				{id:commandblock_minecart,Command:blockdata ~15 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_spawn] ~ ~ ~ summon minecraft:armor_stand ~ ~ ~ {CustomName:"douchepl_main",Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b}}},
+				{id:commandblock_minecart,Command:blockdata ~16 ~7 ~1 {auto:1,Command:kill @e[name=douchepl_spawn]}},
+				{id:commandblock_minecart,Command:blockdata ~17 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_main] ~ ~ ~ detect ~ ~-1 ~ minecraft:air 0 kill @e[name=douchepl,x=~,y=~,z=~,dx=0,dy=3,dz=0]}},
+				{id:commandblock_minecart,Command:blockdata ~18 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_main] ~ ~ ~ detect ~ ~-1 ~ minecraft:air 0 fill ~ ~ ~ ~ ~3 ~ minecraft:air}},
+				{id:commandblock_minecart,Command:blockdata ~19 ~7 ~1 {auto:1,Command:execute @e[name=douchepl_main] ~ ~ ~ detect ~ ~-1 ~ minecraft:air 0 summon minecraft:item ~ ~ ~ {CustomName:"Douche de plage",CustomNameVisible:1b,Tags:["new_item"],Motion:[0.0,0.3,0.0],Item:{id:"minecraft:spawn_egg",Count:1b,tag:{ench:[0:{lvl:1,id:0}],display:{Lore:[0:"#java.io.Exception"],Name:"Douche de plage"},EntityTag:{CustomName:"douchepl_spawn",id:"minecraft:bat",Silent:1b,ActiveEffects:[0:{ShowParticles:0b,Duration:9999,Id:14}]}},Damage:0s}}}},
+				{id:commandblock_minecart,Command:blockdata ~19 ~7 ~ {auto:1,Command:execute @e[name=douchepl_main] ~ ~ ~ detect ~ ~-1 ~ minecraft:air 0 kill @e[name=douchepl_main,r=1,c=1]}},
+				{id:commandblock_minecart,Command:blockdata ~18 ~7 ~ {auto:1,Command:execute @e[name=douchepl,tag=particles] ~ ~ ~ detect ~1 ~-1.3 ~-0.625 minecraft:lever powered=true particle dripWater ~ ~0.7 ~ 0.05 0.05 0.05 1 100 force @a}},
+				
+				
+				{id:commandblock_minecart,Command:setblock ~ ~ ~1 command_block 0 replace {Command:fill ~ ~-3 ~-1 ~ ~ ~ air}},
+				{id:commandblock_minecart,Command:setblock ~ ~-1 ~1 redstone_block},
+				{id:commandblock_minecart,Command:kill @e[type=commandblock_minecart,r=1]}]}]}]}
